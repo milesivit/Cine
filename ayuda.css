@@ -1,0 +1,9 @@
+.clickable-div {
+	cursor: pointer;
+}
+
+.map-container img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
