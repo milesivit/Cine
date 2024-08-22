@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/fondito.png);
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.scene {
+    width: 800px;
+    height: 320px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-custom {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.content {
+    background-image: url('../img/tiket2.png');
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 106%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+    backface-visibility: hidden;
+    padding: 20px;
+    filter: drop-shadow(15px 15px 5px rgba(0, 0, 0, 0.2));
+}
+
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+.container-custom.rotate {
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 800px) {
+    .scene {
+        width: 720px;
+        height: 300px;
+    }
+
+    .btn-custom {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .form-control-custom {
+        width: 60%;
+    }
+
+    .front-content #giro,
+    .back-content #giro {
+        width: 90px;
+    }
+
+    .label-custom {
+        top: 160px;
+        right: 110px;
+    }
+
+    .back-content h2 {
+        top: 15px;
+    }
+
+    .content {
+        background-image: none;
+    }
+}

@@ -1,0 +1,11 @@
+body{
+    background-image: url(../img/fondito.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange;
+}

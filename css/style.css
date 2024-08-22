@@ -1,0 +1,70 @@
+body{
+    background-image: url(../img/fondito.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange;
+}
+
+#carouselCombos {
+    height: 3%; /* Ajusta según el alto del carrusel */
+  }
+
+
+.social-img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  max-height: 80px; /* Establece una altura máxima para que las imágenes no se estiren demasiado */
+  object-fit:scale-down; /* Asegura que la imagen mantenga su proporción original */
+}  
+  
+#gallery-container {
+  min-height: 200px;
+  max-height: 100vh; /* Limita el alto máximo al 100% del alto de la ventana */
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+  overflow: hidden; /* Evita el desbordamiento */
+  position: relative; /* Posiciona el contenedor relativo */
+}
+
+/* Asegura que las imágenes en la galería tengan el mismo tamaño y no se distorsionen */
+.gallery-image {
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Mantiene la proporción de la imagen y recorta el contenido que sobresale */
+}
+
+
+/* Para pantallas grandes, ajusta el tamaño máximo de las imágenes */
+@media (min-width: 768px) {
+  .gallery-image {
+    max-width: 100%; /* Asegura que las imágenes no se estiren */
+    height: 100%;
+  }
+}
+
+/* Para pantallas pequeñas, asegura que las imágenes ocupen todo el ancho del contenedor */
+@media (max-width: 767px) {
+  .gallery-image {
+    width: 100%; /* Imágenes ocupan todo el ancho del contenedor */
+    height: auto;
+  }
+}
+
+.gallery-image:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil */
+}
+
+.promo-img {
+  object-fit: cover; /* Ajusta las imágenes de promociones al contenedor */
+}

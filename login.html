@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/img/icono.png">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="scene">
+        <div class="container-custom">
+            <div class="content front-content " >
+                <h2>Login</h2>
+                <input type="text" class="form-control form-control-custom w-50 mb-3" placeholder="Nombre"
+                    id="loginNombre">
+                <input type="password" class="form-control form-control-custom w-50 mb-3" placeholder="Contraseña"
+                    id="loginPassword">
+                <label class="label-custom position-relative" style="top: -5px; left: 120px;">No tienes cuenta?</label>
+                <button class="btn btn-dark position-relative" style="top: -10px; right: 120px;" id="loginSubmit"
+                    onclick="validateLogin()">Ingresar</button>
+                <button class="btn btn-dark position-relative" style="top: -47px; left: 120px;" id="toSignUp"
+                    onclick="toggleContent()">Sign up</button>
+            </div>
+            <div class="content back-content">
+                <h2>Sign up</h2>
+                <input type="text" class="form-control form-control-custom w-50 mb-1" placeholder="Nombre"
+                    id="signupNombre">
+                <input type="email" class="form-control form-control-custom w-50 mb-1" placeholder="Email"
+                    id="signupEmail">
+                <input type="password" class="form-control form-control-custom w-50 mb-1" placeholder="Contraseña"
+                    id="signupPassword">
+                <label class="label-custom position-relative" style="right: -120px; top: 2px;">Tienes cuenta?</label>
+                <button class="btn btn-dark btn-custom position-relative" style="top: -5px; right: 120px;" id="signUpSubmit"
+                    onclick="validateSignUp()">Ingresar</button>
+                <button class="btn btn-dark btn-custom position-relative" style="top: -41px; left: 120px;" id="toLogin"
+                    onclick="toggleContent()">Login</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

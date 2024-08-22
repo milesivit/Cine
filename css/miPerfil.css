@@ -1,0 +1,34 @@
+body{
+    background-image: url(../img/fondito.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.container {
+    margin-bottom: 2rem; /* Ajusta el valor según sea necesario */
+}
+
+.form-group {
+    position: relative;
+}
+
+.btn-primary {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    /* Opcional: Ajusta el padding del botón si es necesario */
+}
+
+footer {
+    position: relative; /* Fija el footer en una posición fija */
+    bottom: 0; /* Posiciona el footer en la parte inferior de la viewport */
+    width: 100%; /* Hace que el footer ocupe todo el ancho de la pantalla */
+    background-color: #212529; /* Color de fondo del footer (ajusta según tu diseño) */
+    color: #ffffff; /* Color del texto del footer (ajusta según tu diseño) */
+    padding: 1rem; /* Agrega un espacio interno al footer */
+    text-align: left; /* Alinea el texto a la izquierda (ajusta según tu diseño) */
+  }
+  

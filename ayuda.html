@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ayuda</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	    <link rel="icon" href="/img/icono.png">
+		<link rel="stylesheet" href="/css/ayuda.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/index.html">
+					<img src="/img/tickettt.webp" alt="Cinta de película" width="40" height="40" class="d-inline-block align-text-top">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link" aria-current="page" href="/cartelera.html">Cartelera</a>
+						<a class="nav-link" href="/proximamente.html">Próximamente</a>
+						<a class="nav-link" href="/combos.html">Combos</a>
+						<a class="nav-link" href="/promociones.html">Promociones</a>
+						<a class="nav-link" href="/sobreNosotros.html">Sobre Nosotros</a>
+					</div>
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="/img/mascota.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="/miPerfil.html">Mi Perfil</a></li>
+								<li><a class="dropdown-item" href="/ayuda.html">Ayuda</a></li>
+								<li><a class="dropdown-item" href="/login.html">Cerrar Sesión</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container mt-5">
+			<div class="accordion" id="miAcordeon">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Preguntas Frecuentes
+							</button>
+						</h5>
+					</div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#miAcordeon">
+						<div class="card-body">
+							<!-- Acordeones Anidados -->
+							<div class="accordion" id="anidadoAcordeon">
+								<div class="card">
+									<div class="card-header" id="nestedHeading1">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#nestedCollapse1" aria-expanded="false"
+												aria-controls="nestedCollapse1">
+												¿Como comprar Entradas?
+											</button>
+										</h5>
+									</div>
+									<div id="nestedCollapse1" class="collapse" aria-labelledby="nestedHeading1"
+										data-parent="#anidadoAcordeon">
+										<div class="card-body">
+											<ol>
+												<!-- ! Alerta: Cambiar la ruta -->
+												<li>
+													<b>Navega a nuestra página web:</b> 
+													Vé al sitio de "Cartelera" o puede usar el link de abajo.</li>
+													<a href="cartelera.html">Cartelera</a>
+												<br>
+												<li>
+													<b>Selecciona tu pelicula:</b> Busca la pelicula que deseas ver.
+												</li>
+												<br>
+												<li>
+													<b>Elije la Función:</b> Una vez que encuentres la pelicula, selecciona
+													el horario
+													que mas te convenga. Disponemos de múltiples horarios para cada
+													pelicula.
+												</li>
+												<br>
+												<li>
+													<b>Selecciona tus asientos:</b> Dependiendo de la disponibilidad, podrás
+													elegir tus
+													asientos preferidos en el mapa interactivo del cine.
+												</li>
+												<br>
+												<li>
+													<b>Añade entradas:</b> Indica cuántas entradas necesitas. Puedes
+													seleccionar
+													entradas regulares, para estudiantes, para personas mayores, o cualquier
+													otra opción
+													disponible.
+												</li>
+												<br>
+												<li>
+													<b>Revisa tu selección:</b> Verifica los detalles de tu compra,
+													incluyendo la
+													película, el horario y los asientos seleccionados.
+												</li>
+												<br>
+												<li>
+													<b>Realiza el pago:</b> Introduce tus datos de pago. Aceptamos tarjetas
+													de crédito,
+													débito y otros métodos de pago en línea como PayPal y Apple Pay.
+												</li>
+												<br>
+												<li>
+													<b>Confirma la compra:</b>
+													Una vez completado el pago, recibirás una confirmación por
+													correo electrónico con un código QR o un enlace para descargar tus
+													entradas.
+												</li>
+												<br>
+												<li>
+													<b>Presenta tu entrada:</b> En el cine, presenta el código QR desde tu
+													dispositivo móvil o
+													lleva una copia impresa de la entrada para acceder a la sala.
+												</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="nestedHeading2">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#nestedCollapse2" aria-expanded="false"
+												aria-controls="nestedCollapse2">
+												¿Puedo cambiar mis entradas una vez compradas?
+											</button>
+										</h5>
+									</div>
+									<div id="nestedCollapse2" class="collapse" aria-labelledby="nestedHeading2"
+										data-parent="#anidadoAcordeon">
+										<div class="card-body">
+											Si, puedes cambiar tus entradas hasta 24 horas antes de la funcion. Se debe ir
+											personalmente al cine para hacer el cambio de entradas.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="nestedHeading3">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#nestedCollapse3" aria-expanded="false"
+												aria-controls="nestedCollapse3">
+												¿Hay descuentos disponibles?
+											</button>
+										</h5>
+									</div>
+									<div id="nestedCollapse3" class="collapse" aria-labelledby="nestedHeading3"
+										data-parent="#anidadoAcordeon">
+										<div class="card-body">
+											Ofrecemos descuentos para estudiantes, personas mayores y grupos grandes, Los
+											detalles y las condiciones de estos descuentos están disponibles en la página de
+											compra de entradas.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="nestedHeading4">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#nestedCollapse4" aria-expanded="false"
+												aria-controls="nestedCollapse4">
+												¿Qué métodos de pago aceptan?
+											</button>
+										</h5>
+									</div>
+									<div id="nestedCollapse4" class="collapse" aria-labelledby="nestedHeading4"
+										data-parent="#anidadoAcordeon">
+										<div class="card-body">
+											Aceptamos tarjetas de credito, debito y pagos a travez de servicios como PayPal
+											y Apple Pay.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="nestedHeading5">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#nestedCollapse5" aria-expanded="false"
+												aria-controls="nestedCollapse5">
+												¿Puedo reservar entradas sin pagar por adelantado?
+											</button>
+										</h5>
+									</div>
+									<div id="nestedCollapse5" class="collapse" aria-labelledby="nestedHeading5"
+										data-parent="#anidadoAcordeon">
+										<div class="card-body">
+											No, para garantizar tu asiento debes realizar el pago al momento de la reserva.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="nestedHeading6">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#nestedCollapse6" aria-expanded="false"
+												aria-controls="nestedCollapse6">
+												¿Puedo llevar comida y bebida de fuera al cine?
+											</button>
+										</h5>
+									</div>
+									<div id="nestedCollapse6" class="collapse" aria-labelledby="nestedHeading6"
+										data-parent="#anidadoAcordeon">
+										<div class="card-body">
+											Por razones de higiene y seguridad, no permitimos la entrada de comida y bebida
+											del exterior en nuestras instalaciones. Sin embargo, nuestra confitería ofrece
+											una amplia variedad de opciones para que disfrutes durante la película.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="nestedHeading7">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#nestedCollapse7" aria-expanded="false"
+												aria-controls="nestedCollapse7">
+												¿Tienen sesiones especiales para niños o familias?
+											</button>
+										</h5>
+									</div>
+									<div id="nestedCollapse7" class="collapse" aria-labelledby="nestedHeading7"
+										data-parent="#anidadoAcordeon">
+										<div class="card-body">
+											Sí, ofrecemos sesiones matinales y vespertinas especialmente diseñadas para
+											niños y familias. Estas funciones suelen incluir películas animadas o familiares
+											y se programan durante los fines de semana y vacaciones escolares. Consulta
+											nuestra cartelera para más información sobre las próximas sesiones familiares.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="nestedHeading8">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#nestedCollapse8" aria-expanded="false"
+												aria-controls="nestedCollapse8">
+												¿Ofrecen opciones de asientos especiales para personas con discapacidades?
+											</button>
+										</h5>
+									</div>
+									<div id="nestedCollapse8" class="collapse" aria-labelledby="nestedHeading8"
+										data-parent="#anidadoAcordeon">
+										<div class="card-body">
+											Sí, nuestro cine está completamente equipado para recibir a personas con
+											discapacidades. Contamos con asientos accesibles para personas con movilidad
+											reducida y ofrecemos servicios adicionales como audífonos para personas con
+											problemas auditivos. Puedes seleccionar estos asientos al momento de comprar tus
+											entradas en línea.
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Fin Acordeones Anidados -->
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header clickable-div" id="headingTwo"
+					onclick="window.location.href='promociones.html'">
+						<h5 class="mb-0">
+							<span class="btn btn-link">
+								Precios Y Descuentos
+							</span>
+						</h5>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header clickable-div" id="headingTwo"
+					onclick="window.location.href='cartelera.html'">
+						<h5 class="mb-0">
+							<span class="btn btn-link">
+								Proyección y Horarios
+							</span>
+						</h5>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Rembolsos y Cambios</h4>
+						<div class="card-text">
+							<b>Rembolsos</b>
+							<ul>
+								<li>Los reembolsos solo están disponibles para entradas compradas en línea y deben
+									solicitarse al menos 24 horas antes de la función programada.</li>
+								<li>Para solicitar un reembolso, visita la sección "Mi Cuenta" en nuestra web y sigue las
+									instrucciones en la sección de historial de compras.</li>
+							</ul>
+							<b>Cambios</b>
+							<ul>
+								<li>Puedes cambiar tus entradas para otra función o película hasta 24 horas antes de la
+									función original.</li>
+								<li>Para cambiar tus entradas, inicia sesión en tu cuenta, selecciona la entrada que deseas
+									cambiar y sigue las instrucciones en pantalla.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Servicios Adicionales</h4>
+						<div class="card-text">
+							<b>Alquiler de Membresía:</b>
+							<p>Únete a nuestro programa de membresía y disfruta de beneficios exclusivos como descuentos en
+								entradas, acceso a eventos especiales y promociones en la confitería.</p>
+							<b>Concesiones y Snaks:</b>
+							<p>Nuestra confitería ofrece una amplia variedad de snacks y bebidas, incluyendo opciones
+								saludables y para personas con dietas especiales.</p>
+							<b>Accesibilidad:</b>
+							<p>Contamos con asientos accesibles para personas con movilidad reducida y servicios para
+								personas con discapacidades auditivas y visuales.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Seguridad y Salud</h4>
+						<div class="card-text">
+							<b>Medidas de Seguridad:</b>
+							<ul>
+								<li>Realizamos limpiezas profundas y desinfecciones regulares en todas nuestras
+									instalaciones.</li>
+								<li>Se han instalado estaciones de desinfección de manos en puntos clave del cine.</li>
+							</ul>
+							<ul>
+								<li>Solicitamos a todos los visitantes el uso de mascarillas en las áreas comunes.</li>
+								<li>Mantenemos el distanciamiento social en las filas y áreas de espera.</li>
+								<li>Nuestro personal está capacitado para manejar emergencias de salud y primeros auxilios.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Mapa y Ubicacion</h4>
+						<div class="card-text">
+							<b>Calle:</b>
+							<p> Av. Int. Dr. Jaime Gil</p>
+
+							<b>Ciudad:</b>
+							<p> Rio Cuarto, Cordoba</p>
+							<div class="map-container border rounded"
+								onclick="window.open('https://www.google.com.ar/maps/place/Paseo+Ribera+Shopping/@-33.1180173,-64.3463074,18z/data=!4m6!3m5!1s0x95d20072ddfdfbab:0x585fda94116c9882!8m2!3d-33.117818!4d-64.3464374!16s%2Fg%2F11dxdbh1n9?entry=ttu', '_blank')">
+								<img src="img/Mapa 2.png" alt="Mapa" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Contacto</h4>
+						<div class="container mt-5">
+							<!-- Enlace que abre en nueva pestaña -->
+							<p>Instagram: <a href="https://www.instagram.com/XXXXXXXX/"
+									target="_blank">@XXXXXXXX</a></p>
+							<p>Correo: <a href="mailto:XXXXXXXX@gmail.com"
+									target="_blank">XXXXXXXX@gmail.com</a></p>
+
+							<p>Twitter: <a href="https://x.com/XXXXXXXX" target="_blank">@XXXXXXXX</a></p>
+
+							<p>Tel: <a href="tel: +5493585166422">358 XXXXXXXX</a></p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bg-dark text-light text-left py-3 mt-6" style="margin-top: 5%;">
+			<p class="mb-0" style="margin-left: 1%;">&copy; 2024. Todos los derechos reservados.</p>
+		</footer>
+
+		<!-- Bootstrap JS and dependencies -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
+</html>

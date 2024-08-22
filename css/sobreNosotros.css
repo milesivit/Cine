@@ -1,0 +1,18 @@
+.navbar-nav .nav-link:hover {
+    color: orange;
+}
+body{
+    background-image: url(../img/fondito.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* Aplica un efecto hover a las imágenes circulares del equipo */
+.equipo-img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza la transición */
+  }
+  
