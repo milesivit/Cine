@@ -18,7 +18,7 @@ function validateLogin() {
         if (user) {
             // Guarda los datos del usuario en localStorage para la sesión actual
             localStorage.setItem('loggedInUser', JSON.stringify(user));
-            window.location.href = 'index.html';
+            window.location.href = 'inicio.html';
         } else {
             showError('Usuario o contraseña incorrectos.', 'loginNombre');
         }
@@ -54,7 +54,7 @@ function validateSignUp() {
             localStorage.setItem('users', JSON.stringify(users));
             // Guarda el nuevo usuario en localStorage y redirige a la página de inicio
             localStorage.setItem('loggedInUser', JSON.stringify(newUser));
-            window.location.href = 'index.html';
+            window.location.href = 'inicio.html';
         }
     }
 }
